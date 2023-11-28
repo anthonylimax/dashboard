@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="item">
+                <img src="icon.png" alt="">
+                <span>Microdados ENEM</span>
+            </div>
+        </header>
+        <aside>
+            <span>Microdados ENEM</span>
+        </aside>
+    </div>
+    <main>
+        <div class="text-dashboard">
+            <span>Dashboard</span>
+            <span id="total"></span>
+        </div>
+        <section class="charts">
+            <div class="esgotamento-sanitario">
+                <div>
+                    <span>ESGOTAMENTO SANITÁRIO</span>
+                    <select name="select-region" id="">
+                        <option value="Nordeste">Nordeste</option>
+                        <option value="Centro-Oeste">Centro-Oeste</option>
+                        <option value="Norte">Norte</option>
+                        <option value="Sul">Sul</option>
+                        <option value="Sudeste">Sudeste</option>
+                    </select>
+                </div>
+                <div class="wrapper">
+                    <div class="graphic">
+                        <div class="coleta">
+                            <div class="popup-data"><span></span></div>
+                        </div>
+                        <div class="indefinido">
+                            <div class="popup-data"><span></span></div>
+                        </div>
+                        <div class="queima">
+                            <div class="popup-data"><span></span></div>
+                        </div>
+                        <div class="enterra">
+                            <div class="popup-data"><span></span></div>
+                        </div>
+                        <div class="publico">
+                            <div class="popup-data"><span></span></div>
+                        </div>
+                        <div class="outro">
+                            <div class="popup-data"><span></span></div>
+                        </div>
+                    </div>
+                    <div class="marcacoes">
+                        <div>
+                            <div class="color coleta">
+                            </div>
+                            <span>coleta</span>
+                        </div>
+                        <div>
+                            <div class="color indefinido">
+                            </div>
+                            <span>indefinido</span>
+                        </div>
+                        <div>
+                            <div class="color queima">
+                            </div>
+                            <span>queima</span>
+                        </div>
+                        <div>    
+                            <div class="color enterra">
+                            </div>
+                            <span>enterra</span>
+                        </div>
+                        <div>
+                            <div class="color publico">
+                            </div>
+                            <span>publico</span>
+                        </div>
+                        <div>
+                            <div class="color outro">
+                            </div>
+                            <span>outro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="energy">
+                <span>ENERGIA</span>
+                <div class="pizza-graphic">
+                    <div class="slice slice1"></div>
+                    <div class="slice slice2"></div>
+                    <div class="slice slice3"></div>
+                </div>
+                
+                <div class="marcacoes">
+                    <div>
+                        <div class="color publico_slice">
+                        </div>
+                        <span>publica</span>
+                    </div>
+                    <div>
+                        <div class="color gerador_slice">
+                        </div>
+                        <span>gerador</span>
+                    </div>
+                    <div>
+                        <div class="color renovavel_slice">
+                        </div>
+                        <span>renovavel</span>
+                    </div>
+                </div>
+            </div>
+            <div class="circle-percent">
+                    <div class="circle">
+                        <div class="circleafter circle1">
+                            <span>80%</span>
+                            <span>poço</span>
+                        </div>
+                        <div class="circleafter circle2">
+                            <span>80%</span>
+                            <span>tratada</span>
+                        </div>
+                        <div class="circleafter circle3">
+                            <span>80%</span>
+                            <span>não possue</span>
+                        </div>
+                    </div>
+            </div>
+            <div class="regioes">
+                <span>REGIÕES DO BRASIL</span>
+                <img src="brasil.png" alt="">
+            </div>
+            <div>
+                <canvas height="300px" width="400px" id="chartjs"></canvas>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

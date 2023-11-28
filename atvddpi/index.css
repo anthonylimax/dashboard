@@ -1,0 +1,339 @@
+*{
+    font-family: "poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+main{
+    margin-top: 100px;
+    margin-left: 40px;
+    width: 100%;
+}
+body{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+}
+section{
+    gap: 20px;
+}
+.charts{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-dashboard{
+    display: flex;
+    flex-direction: column;
+}
+.text-dashboard span:nth-child(1){
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.text-dashboard span:nth-child(2){
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 20px;
+
+}
+.popup-data{
+    opacity: 0;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 50px;
+    top: -65px;
+    left: -60px;
+    border-radius: 12px;
+    background-color: #37375C;
+}
+.popup-data span{
+    font-size: 12px;
+    color: white;
+}
+.actived{
+    opacity: 1;
+}
+.marcacoes{
+    display: flex;
+    gap: 8px;
+    width: 60%;
+    justify-content: space-between;
+}
+.marcacoes > * {
+    display: flex;
+    gap:2px;
+    align-items: center;
+}
+.pizza-graphic{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.slice{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    clip-path: circle(100%);
+    transition: 1s;
+}
+.pizza-graphic::after{
+    width: 70%;
+    height: 70%;
+    content: '';
+    top: 30px;
+    right: 30px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+}
+.slice1{
+    background: conic-gradient(from 0deg, #5A6ACF 280deg, transparent 0 360deg);
+    transform: rotate(0deg);
+}
+.slice2{
+    background: conic-gradient(from 0deg, #8593ED 20deg, transparent 0 360deg);
+    transform: rotate(280deg);
+}
+.slice3{
+    background: conic-gradient(from 0deg, #C7CEFF 60deg, transparent 0 360deg);
+    transform: rotate(300deg);
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.color{
+    position: relative;
+    height: 10px;
+}
+.color span{
+    top: 10px;
+    right: -20px;
+    position: absolute;
+}
+.esgotamento-sanitario{
+    display: flex;
+    flex-direction: column;
+    width: 55%
+}
+.graphic{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    align-items: end;
+}   
+.energy{
+    width: 40%;
+}
+.graphic > *{
+    transition: 0.4s;
+    position: relative;
+}
+.coleta{
+    width: 10px;
+    background-color: #5A6ACF;
+}
+.publico_slice{
+
+    width: 10px;
+    background-color: #5A6ACF;
+}
+.renovavel_slice{
+
+    width: 10px;
+    background-color: #C7CEFF;
+}
+.gerador_slice{
+
+    width: 10px;
+    background-color: #8593ED;
+}
+.indefinido{
+    width: 10px;
+    background-color: #E6E8EC;
+}
+.queima{
+    width: 10px;
+    background-color: #F99C30;
+}
+.enterra{
+    width: 10px;
+    background-color: #2FBFDE;
+}
+.publico{
+    width: 10px;
+    background-color: #627B87;
+}
+.outro{
+    width: 10px;
+    background-color: #F8A0A0;
+}
+.div{
+    width: 50%;
+}
+
+.text-dashboard span:nth-child(3){
+    font-weight: 600;
+    font-size: 16x;
+    margin-bottom: 20px;
+
+}
+header{
+    position: absolute;
+    top: 0;
+    border-bottom: 1px solid #C8CBD9;
+    height: 60px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: flex-end;
+}
+header > *{
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+}
+aside{
+    display: flex;
+    justify-content: center;
+    background-color: #F1F2F7;
+    width: 200px;
+    height: 100vh;
+}
+aside span{
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #C8CBD9;
+}
+
+.circle-percent{
+    width: 30%;
+}
+
+.circle{
+    width: 210px;
+    height: 210px;
+}
+.circle1{
+    position: relative;
+    width: 80%;
+    background: conic-gradient(from 30deg, #6463D6EF 210deg, transparent 0deg 360deg);
+    border-radius: 50%;
+    height: 80%;
+}
+.circle1::after{
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    border-radius: 50%;
+    left: 2.5%;
+    background-color: white;
+}
+.circleafter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.circleafter span{
+    z-index: 3;
+    font-size: 100%;
+    color: white;
+}
+.circle1::before{
+    width: 90%;
+    position: absolute;
+    content: "";
+    z-index: 1;
+    left: 5%;
+    top: 5%;
+    border-radius: 50%;
+    background-color: #6463D6EF;
+    height: 90%;
+}
+.circle2{
+    position: relative;
+    width: 50%;
+    background: conic-gradient(from 30deg, #F99C30EF 210deg, transparent 0deg 360deg);
+    border-radius: 50%;
+    height: 50%;
+}
+.circle2::after{
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    border-radius: 50%;
+    left: 2.5%;
+    background-color: white;
+}
+.circleafter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    flex-direction: column;
+}
+.circle2::before{
+    width: 90%;
+    position: absolute;
+    content: "";
+    z-index: 1;
+    left: 5%;
+    top: 5%;
+    border-radius: 50%;
+    background-color: #F99C30EF;
+    height: 90%;
+}
+.circle3{
+    position: relative;
+    width: 80%;
+    
+    background: conic-gradient(from 30deg, #2FBFDEEF 210deg, transparent 0deg 360deg);
+    border-radius: 50%;
+    height: 80%;
+}
+.circle3::after{
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    border-radius: 50%;
+    left: 2.5%;
+    background-color: white;
+}
+.circleafter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.circle3::before{
+    width: 90%;
+    position: absolute;
+    content: "";
+    z-index: 1;
+    left: 5%;
+    top: 5%;
+    border-radius: 50%;
+    background-color: #2FBFDEEF;
+    height: 90%;
+}
+
+.regioes{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
